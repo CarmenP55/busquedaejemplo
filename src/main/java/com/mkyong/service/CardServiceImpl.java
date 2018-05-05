@@ -12,28 +12,28 @@ public class CardServiceImpl implements CardService {
     @Autowired
     BaseballCardRepository cardrepository;
 
-    BaseballCard TedWilliams = new BaseballCard();
-    BaseballCard BobGibson = new BaseballCard();
-    BaseballCard HonusWagner = new BaseballCard();
+    BaseballCard CarmenPerez = new BaseballCard();
+    BaseballCard FernandoMtz = new BaseballCard();
+    BaseballCard VictorDaniel = new BaseballCard();
 
     public void addCards() {
-        TedWilliams.setName("Ted Williams");
-        TedWilliams.setYear(1954);
-        TedWilliams.setRarityLevel("Very Rare");
+        CarmenPerez.setName("Carmen");
+        CarmenPerez.setYear(24);
+        CarmenPerez.setRarityLevel("Secundaria");
 
-        cardrepository.save(TedWilliams);
+        cardrepository.save(CarmenPerez);
 
-        BobGibson.setName("Bob Gibson");
-        BobGibson.setYear(1959);
-        BobGibson.setRarityLevel("Very Rare");
+        FernandoMtz.setName("Fernando");
+        FernandoMtz.setYear(26);
+        FernandoMtz.setRarityLevel("Primaria");
 
-        cardrepository.save(BobGibson);
+        cardrepository.save(FernandoMtz);
 
-        HonusWagner.setName("Honus Wagner");
-        HonusWagner.setYear(1909);
-        HonusWagner.setRarityLevel("Rarest");
+        VictorDaniel.setName("Victor Daniel");
+        VictorDaniel.setYear(25);
+        VictorDaniel.setRarityLevel("Licenciatura");
 
-        cardrepository.save(HonusWagner);
+        cardrepository.save(VictorDaniel);
 
         System.out.println("Cards have been added : " + cardrepository.findAll());
 
